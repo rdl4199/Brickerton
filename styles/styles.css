@@ -1,4 +1,12 @@
+#testDiv{
+    position:relative;
+    height:100vh;
+    width:100vw;
+}
+
 #map{
-    width: 500px;
-    height: 500px;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
 }
