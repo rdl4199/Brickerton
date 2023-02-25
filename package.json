@@ -1,0 +1,26 @@
+{
+  "name": "brickerton",
+  "version": "1.0.0",
+  "description": "Packages for brickerton",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdl4199/Brickerton.git"
+  },
+  "keywords": [
+    "Awesome"
+  ],
+  "author": "Reese, Kenny, Lori, Swapnil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdl4199/Brickerton/issues"
+  },
+  "homepage": "https://github.com/rdl4199/Brickerton#readme"
+}
