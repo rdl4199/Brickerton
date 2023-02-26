@@ -1,3 +1,5 @@
+import locations from '../resources/markers.json' assert {type: 'json'};
+
 mapboxgl.accessToken = 'pk.eyJ1IjoicmRsNDE5OSIsImEiOiJja3poYTVwamwzenhtMnVuazZ2ZW8xbmdmIn0.Nd9ajbyw2XbvP5FAZLCXjA';
 const map = new mapboxgl.Map({
     container: 'map', // container ID
@@ -5,6 +7,23 @@ const map = new mapboxgl.Map({
     center: [-77.675, 43.084], // starting position [lng, lat]
     zoom: 15, // starting zoom
 });
+
+map.on('dblclick', (e) => {
+    var modalButton = document.querySelector("#modalButton");
+    modalButton.click();
+    var modal = document.querySelector("#modal");
+    modal.dataset.longitude = e.lngLat.lng;
+    modal.dataset.latitude = e.lngLat.lat;
+});
+
+document.querySelector("#infoSubmit").addEventListener("click", () => {
+    let modal = document.querySelector("#modal");
+    let title = document.querySelector("#title");
+    let description = document.querySelector("#description");
+
+    //post(modal.dataset.longitude, modal.dataset.latitude)
+});
+
 
 fetch("../resources/markers.json")
     .then(response => response.json())
