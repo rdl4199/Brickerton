@@ -1,14 +1,14 @@
 {
     "locations": [
         {
-            "name": "test1",
-            "lat": 12.1,
-            "lng": 20.1
+            "name": "Weather Machine",
+            "lng": -77.67458,
+            "lat": 43.08480
         },
         {
-            "name": "test2",
-            "lat": 42.2,
-            "lng": 37.5
+            "name": "Got Ticketed Here",
+            "lng": -77.68050,
+            "lat": 43.08211
         }
     ]
     
