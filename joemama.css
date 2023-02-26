@@ -5,11 +5,43 @@ body {
 
 h1 {
   color: Lime;
-  padding: 0px 50px 50px 50px;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: 'Courier New', monospace;
   font-variant: small-caps;
   text-align: center;
   font-size: 100px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.box {
+  padding: 0 50px 0 10px;
+  border: 0px solid #656464;
+  border-radius: 10px;
+}
+
+.box h1 {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+.box h1::after {
+  content: "";
+  width: 5px;
+  height: 200px;
+  background: #ec7fff;
+  display: inline-block;
+  animation: cursor-blink 1.5s steps(2) infinite;
 }
 ul {
   list-style-type: none;
@@ -21,6 +53,7 @@ ul {
 
 li {
   float: left;
+  font-family: 'Courier New', monospace;
 }
 
 li a {
@@ -29,6 +62,7 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Courier New', monospace;
 }
 
 li a:hover:not(.active) {
